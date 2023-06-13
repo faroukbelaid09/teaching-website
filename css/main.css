@@ -598,27 +598,67 @@ main {
 
 /* Q&A Section Styling */
 .QandA {
+    padding: 5rem 1rem;
+}
+
+.QandA-title {
+    font-size: 2.4rem;
+    color: #001a49;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .QandA .question {
-    width: 400px;
-    height: 100px;
-    background-color: #3da882;
-    border: 2px solid red;
+    max-width: 800px;
+    height: 135px;
+    background-color: white;
+    border: 2px solid rgba(159, 6, 255, 0.2);
+    border-radius: 10px;
     margin: 2rem auto;
+    padding: 0 2rem;
     cursor: pointer;
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
     overflow: hidden;
 }
 
-.QandA .question h3 {
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-title .title {
     margin: 35px 0 50px 0;
+    color: #001a49;
+}
+
+.question-title .icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff2e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-title .icon img.rotated {
+    animation: RotateArrowUp 10s;
+}
+
+@keyframes RotateArrowUp {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.question .question-description {
+    color: #4f596a;
+    font-size: 0.9rem;
 }
 
 .QandA .grow-container {
-    height: 300px;
-    transition: all 1s ease-out;
+    height: 450px;
+    transition: all 0.5s ease-out;
 }
 
 /* Footer Section Styling */
@@ -647,6 +687,19 @@ footer {
 
     .testimonials-wrapper {
         height: 500px;
+    }
+
+    .QandA .question {
+        height: 100px;
+    }
+
+    .QandA .grow-container {
+        height: 350px;
+        transition: all 0.5s ease-out;
+    }
+
+    .question .question-description {
+        font-size: 1.1rem;
     }
 }
 
