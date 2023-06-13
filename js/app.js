@@ -67,7 +67,7 @@ function resetButtonState(firstCondition, secondConditin, setEle, removeEle) {
 
 //////////////////
 
-const tst = document.querySelectorAll(".test");
+const tst = document.querySelectorAll(".question");
 
 tst.forEach((ele) => {
     ele.addEventListener("click", () => {

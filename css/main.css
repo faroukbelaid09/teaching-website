@@ -601,7 +601,7 @@ main {
     text-align: center;
 }
 
-.QandA .test {
+.QandA .question {
     width: 400px;
     height: 100px;
     background-color: #3da882;
@@ -612,7 +612,7 @@ main {
     overflow: hidden;
 }
 
-.QandA .test h3 {
+.QandA .question h3 {
     margin: 35px 0 50px 0;
 }
 
