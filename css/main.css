@@ -641,8 +641,20 @@ main {
     align-items: center;
 }
 
+.question-title .icon img{
+    animation: RotateArrowDown 0.5s forwards;
+}
 .question-title .icon img.rotated {
-    animation: RotateArrowUp 10s;
+    animation: RotateArrowUp 0.5s forwards;
+}
+
+@keyframes RotateArrowDown {
+    from{
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes RotateArrowUp {

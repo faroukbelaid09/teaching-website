@@ -67,10 +67,13 @@ function resetButtonState(firstCondition, secondConditin, setEle, removeEle) {
 
 //////////////////
 
-const tst = document.querySelectorAll(".question");
+const questions = document.querySelectorAll(".question");
 
-tst.forEach((ele) => {
+questions.forEach((ele) => {
+
     ele.addEventListener("click", () => {
         ele.classList.toggle("grow-container")
+
+        ele.querySelector(".icon img").classList.toggle("rotated")
     })
 })
