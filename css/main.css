@@ -504,11 +504,11 @@ main {
 }
 
 .testimonials .next {
-    right: -25px;
+    right: 0;
 }
 
 .testimonials .previous {
-    left: -25px;
+    left: 0;
 }
 
 
