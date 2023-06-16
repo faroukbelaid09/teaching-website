@@ -1,7 +1,6 @@
 const testimonials = document.querySelectorAll(".testimonial")
 const btnNext = document.querySelector(".next")
 const btnPrevious = document.querySelector(".previous")
-// btnPrevious.setAttribute('disabled', '');
 btnPrevious.classList.add("hide-button")
 
 let slideIndex = 1
@@ -76,4 +75,13 @@ questions.forEach((ele) => {
 
         ele.querySelector(".icon img").classList.toggle("rotated")
     })
+})
+
+//////////////////
+
+const toggelBtn = document.querySelector(".toggle-button");
+const mainNav = document.querySelector(".main-nav__items");
+
+toggelBtn.addEventListener("click", () => {
+    mainNav.classList.toggle("show")
 })
