@@ -1,0 +1,91 @@
+/* Pricing Section Styling */
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem;
+}
+
+.pricing-btn {
+    background-color: #61e4b2;
+    color: white;
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+.pricing-title {
+    font-size: 2.4rem;
+    color: #001a49;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.pricing-description {
+    font-size: 1.25rem;
+    color: #001a49;
+}
+
+.pricing ul {
+    margin: 2rem 0;
+    color: #001a49;
+    font-weight: bolder;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.plan {
+    background-color: #e8fff7;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+}
+
+.plan-title,
+.plan-quantity {
+    color: #a4acc5;
+    margin: 1rem 0;
+}
+
+.plan-price {
+    font-size: 2.4rem;
+    font-weight: bolder;
+    color: #001a49;
+}
+
+.plan-price-currency {
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.plan-off-percentage {
+    padding: 0.5rem;
+    background-color: #45f84b;
+    width: fit-content;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+.plan-divider {
+    height: 1px;
+    background-color: #a4acc5;
+    margin: 2rem 0;
+}
+
+.plan-advantages {
+    list-style-type: none;
+}
+
+.plan-advantage {
+    margin: 1rem 0;
+    font-weight: lighter;
+}
