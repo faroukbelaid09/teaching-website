@@ -1,4 +1,6 @@
+/* Footer Section Styling */
 #footer {
+    grid-area: footer;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6,6 +8,10 @@
     background-color: rgba(232, 255, 247, 0.49);
     color: #001a49;
     padding: 8rem 1rem;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .footer-logo img {
