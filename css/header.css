@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button,
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    overflow-x: hidden;
+}
+
+
+/* Header Style */
+
+.main-header {
+    position: relative;
+    grid-area: header;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.brand .logo {
+    width: 160px;
+}
+
+.toggle-button {
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toggle-button__bar {
+    background-color: #001a49;
+    height: 2px;
+    width: 1.5rem;
+    margin: 2px 0;
+}
+
+.main-nav__items {
+    position: absolute;
+    top: -250%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    background-color: white;
+    box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.3);
+    transition: top 1s;
+    padding-bottom: 2rem;
+}
+
+.main-nav__items.show {
+    top: 100%;
+    transition: top 1s;
+}
+
+.main-nav__item {
+    margin: 1rem 0;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #001a49;
+}
+
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background: linear-gradient(180deg, #3da882, #5cdfa8);
+    border-radius: 1.5rem;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .main-header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width:992px) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+    }
+
+    .main-nav__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .main-nav__item {
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width:1400px) {
+    .main-header {
+        padding: 2rem 0;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main-nav__items {
+        justify-content: right;
+    }
+
+    .main-nav__item {
+        margin-right: 5rem;
+    }
+}
