@@ -44,21 +44,25 @@
 }
 
 @media (min-width:992px) {
+    .hero div {
+        margin: 5rem auto 0 auto;
+    }
+
     .hero-title {
         margin-bottom: 1.5rem;
     }
-    
+
     .hero .cta {
         width: 40%;
         margin: 3rem 0 4rem 0;
         font-size: 1rem;
     }
+
 }
 
 @media (min-width:1400px) {
     .hero div {
         max-width: 1200px;
         padding: 0;
-        margin: 5rem auto 0 auto;
     }
 }
