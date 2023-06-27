@@ -1,0 +1,64 @@
+.hero {
+    background-color: aquamarine;
+    padding: 3rem 1rem;
+    margin-bottom: 4rem;
+}
+
+.hero-title {
+    font-size: 2.4rem;
+    color: #001a49;
+    margin-bottom: 2.5rem;
+}
+
+.hero-description {
+    color: #001a49;
+    font-size: 1.25rem;
+}
+
+.hero .cta {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 3rem 0;
+    white-space: nowrap;
+}
+
+@media (min-width:576px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero .cta {
+        width: 60%;
+    }
+}
+
+@media (min-width:768px) {
+    .hero {
+        padding: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width:992px) {
+    .hero-title {
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero .cta {
+        width: 40%;
+        margin: 3rem 0 4rem 0;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:1400px) {
+    .hero div {
+        max-width: 1200px;
+        padding: 0;
+        margin: 5rem auto 0 auto;
+    }
+}
