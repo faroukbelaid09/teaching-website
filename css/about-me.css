@@ -1,5 +1,8 @@
 .hero {
-    background-color: aquamarine;
+    background-image: url("https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 10%;
     padding: 3rem 1rem;
     margin-bottom: 4rem;
 }
