@@ -1,3 +1,4 @@
+/* Hero Styling Secion */
 .hero {
     background-image: url("https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
     background-repeat: no-repeat;
@@ -24,6 +25,40 @@
     font-weight: bold;
     margin: 3rem 0;
     white-space: nowrap;
+}
+
+/* About Me Styling Section  */
+.about-me__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4%;
+    min-width: 25rem;
+    max-width: 37.5rem;
+    margin: auto;
+}
+
+.about-me__description {
+    flex-basis: 90%;
+}
+
+.about-me__description h2 {
+    color: #001a49;
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.about-me__description p {
+    color: #4f596a;
+    line-height: 1.5;
+}
+
+.about-me__img {
+    flex-basis: 90%;
+    margin: 2rem 0;
+    background-color: aquamarine;
+    height: 21.875rem;
 }
 
 @media (min-width:576px) {
@@ -61,11 +96,41 @@
         font-size: 1rem;
     }
 
+    /* About Me Styling Section */
+    .about-me{
+        padding: 0 2rem;
+    }
+    .about-me__wrapper {
+        align-items: center;
+        gap: 8%;
+        max-width:80rem;
+    }
+    
+    .about-me__description {
+        flex-basis: 46%;
+    }
+
+    .about-me__img {
+        flex-basis: 46%;
+    }
+
+    .about-me__wrapper:nth-child(2) .about-me__description {
+        order: 2;
+    }
+    .about-me__description h2{
+        text-align: left;
+    }
 }
 
 @media (min-width:1400px) {
     .hero div {
         max-width: 1200px;
         padding: 0;
+    }
+
+    .about-me{
+        max-width: 1200px;
+        padding: 0;
+        margin: auto;
     }
 }
