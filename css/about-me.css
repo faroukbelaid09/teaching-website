@@ -28,6 +28,10 @@
 }
 
 /* About Me Styling Section  */
+.about-me {
+    margin-bottom: 5rem;
+}
+
 .about-me__wrapper {
     display: flex;
     justify-content: center;
@@ -57,9 +61,27 @@
 .about-me__img {
     flex-basis: 90%;
     margin: 2rem 0;
-    background-color: aquamarine;
     height: 21.875rem;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
+
+.about-me__wrapper:nth-child(1) .about-me__img {
+    background-image: url("https://img.freepik.com/free-vector/singing-coach-teaching-group-children-music-teacher-choir-kids-classroom-flat-vector-illustration-music-lesson-education-hobby_74855-13237.jpg");
+
+}
+
+.about-me__wrapper:nth-child(2) .about-me__img {
+    background-image: url("https://img.freepik.com/premium-vector/hand-drawn-about-me-concept_52683-58648.jpg");
+}
+
+.about-me__wrapper:nth-child(3) .about-me__img {
+    background-image: url("https://img.freepik.com/free-vector/tiny-office-employees-working-abstract-caring-hands_74855-19924.jpg");
+}
+
+
+
 
 @media (min-width:576px) {
     .hero-title {
@@ -97,15 +119,16 @@
     }
 
     /* About Me Styling Section */
-    .about-me{
+    .about-me {
         padding: 0 2rem;
     }
+
     .about-me__wrapper {
         align-items: center;
         gap: 8%;
-        max-width:80rem;
+        max-width: 80rem;
     }
-    
+
     .about-me__description {
         flex-basis: 46%;
     }
@@ -117,7 +140,8 @@
     .about-me__wrapper:nth-child(2) .about-me__description {
         order: 2;
     }
-    .about-me__description h2{
+
+    .about-me__description h2 {
         text-align: left;
     }
 }
@@ -128,9 +152,10 @@
         padding: 0;
     }
 
-    .about-me{
+    .about-me {
         max-width: 1200px;
         padding: 0;
         margin: auto;
+        margin-bottom: 5rem;
     }
 }
