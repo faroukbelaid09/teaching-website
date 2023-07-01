@@ -1,0 +1,161 @@
+/* Hero Styling Secion */
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 10%;
+    padding: 3rem 1rem;
+    margin-bottom: 4rem;
+}
+
+.hero-title {
+    font-size: 2.4rem;
+    color: #001a49;
+    margin-bottom: 2.5rem;
+}
+
+.hero-description {
+    color: #001a49;
+    font-size: 1.25rem;
+}
+
+.hero .cta {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 3rem 0;
+    white-space: nowrap;
+}
+
+/* About Me Styling Section  */
+.about-me {
+    margin-bottom: 5rem;
+}
+
+.about-me__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4%;
+    min-width: 25rem;
+    max-width: 37.5rem;
+    margin: auto;
+}
+
+.about-me__description {
+    flex-basis: 90%;
+}
+
+.about-me__description h2 {
+    color: #001a49;
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.about-me__description p {
+    color: #4f596a;
+    line-height: 1.5;
+}
+
+.about-me__img {
+    flex-basis: 90%;
+    margin: 2rem 0;
+    height: 21.875rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.about-me__wrapper:nth-child(1) .about-me__img {
+    background-image: url("https://img.freepik.com/free-vector/singing-coach-teaching-group-children-music-teacher-choir-kids-classroom-flat-vector-illustration-music-lesson-education-hobby_74855-13237.jpg");
+
+}
+
+.about-me__wrapper:nth-child(2) .about-me__img {
+    background-image: url("https://img.freepik.com/premium-vector/hand-drawn-about-me-concept_52683-58648.jpg");
+}
+
+.about-me__wrapper:nth-child(3) .about-me__img {
+    background-image: url("https://img.freepik.com/free-vector/tiny-office-employees-working-abstract-caring-hands_74855-19924.jpg");
+}
+
+
+
+
+@media (min-width:576px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero .cta {
+        width: 60%;
+    }
+}
+
+@media (min-width:768px) {
+    .hero {
+        padding: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width:992px) {
+    .hero div {
+        margin: 5rem auto 0 auto;
+    }
+
+    .hero-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .cta {
+        width: 40%;
+        margin: 3rem 0 4rem 0;
+        font-size: 1rem;
+    }
+
+    /* About Me Styling Section */
+    .about-me {
+        padding: 0 2rem;
+    }
+
+    .about-me__wrapper {
+        align-items: center;
+        gap: 8%;
+        max-width: 80rem;
+    }
+
+    .about-me__description {
+        flex-basis: 46%;
+    }
+
+    .about-me__img {
+        flex-basis: 46%;
+    }
+
+    .about-me__wrapper:nth-child(2) .about-me__description {
+        order: 2;
+    }
+
+    .about-me__description h2 {
+        text-align: left;
+    }
+}
+
+@media (min-width:1400px) {
+    .hero div {
+        max-width: 1200px;
+        padding: 0;
+    }
+
+    .about-me {
+        max-width: 1200px;
+        padding: 0;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+}
