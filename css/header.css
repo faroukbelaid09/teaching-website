@@ -7,6 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 button,
 a {
     font-family: 'Montserrat', sans-serif;
